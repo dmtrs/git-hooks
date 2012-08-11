@@ -7,7 +7,7 @@
 # see the README
 
 PHPCS_BIN=/usr/bin/phpcs
-PHPCS_CODING_STANDARD=PEAR
+PHPCS_CODING_STANDARD=PSR
 PHPCS_IGNORE=
 TMP_STAGING=".tmp_staging"
 
@@ -104,7 +104,7 @@ RETVAL=$?
 rm -rf $TMP_STAGING
 
 if [ $RETVAL -ne 0 ]; then
-    echo "$OUTPUT" | less
+    echo "$OUTPUT"
 fi
 
 exit $RETVAL
